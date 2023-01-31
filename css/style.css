@@ -3,9 +3,10 @@
 .color-3 {color: #E5E0FF;}
 .color-4 {color: #FFF2F2;}
 
-body {
+body { 
     background-color: #FFF2F2;
     font-family: 'Ubuntu', sans-serif;
+    
 }
 
 header {

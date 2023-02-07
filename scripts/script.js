@@ -17,21 +17,3 @@ function cargarAWeb(json) {
     document.getElementById("direccion").innerHTML = direccion;
 }
 
-const coleccionItem = document.getElementsByClassName("lineadeltiempo-item");
-const coleccionBotonIcono = document.getElementsByClassName("lineadeltiempo-item-botton-icono");
-
-for (let i = 0; i < coleccionItem.length; i++) {
-    let exp1 = coleccionItem[i];
-    let botonExp1 = coleccionBotonIcono[i];
-    console.log(exp1);
-    exp1.addEventListener('click', () => cambioIcono(botonExp1));
-}
-
-
-function cambioIcono(botonExp) {
-    if (botonExp.ariaExpanded === "false") {
-        botonExp.className = "fa-solid fa-chevron-down fa-xl collapsed"
-    } else {
-        botonExp.className = "fa-solid fa-chevron-up fa-xl"
-    }
-}

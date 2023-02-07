@@ -4,239 +4,197 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="titulo">Curriculum</title>
+    <title>Curriculum</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/c94fd05ef8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png">
 </head>
-<body>
+<body id="home">
+    <div class="container-fluid" >
+        <header class="row">
+            <nav class="navbar justify-content-end">
+                <ul class="nav">
+                    <li class="nav-item hvr-underline-from-center" > <a class="nav-link" href="#home">Inicio</a> </li>
+                    <li class="nav-item hvr-underline-from-center"> <a class="nav-link" href="#sobremi">Sobre mí</a> </li>
+                    <li class="nav-item hvr-underline-from-center"> <a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item hvr-underline-from-center"> <a class="nav-link" href="#formacion">Formación</a></li>
+                    <li class="nav-item hvr-underline-from-center"> <a class="nav-link" href="#idiomas">Idiomas</a></li>
+                    <li class="nav-item hvr-underline-from-center"> <a class="nav-link" href="#cursos">Cursos</a></li>
+            <!--            <li class="nav-item"> <a class="nav-link" href="#">Portfolio</a></li> -->
+                    <li class="nav-item hvr-underline-from-center"> <a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
     
-    
-      <header class="container-fluid" id="home">
-          <div class="row">
-              <div class="col-md text-md-end text-center contenedor-foto">
-                  <img id="imagenPerfil" class="col-md imagenPerfil">
-              </div>
-              <div class="col-md contenedor-nombre">
-                  <h1 class= "py-md-1 text-md-start text-center info" id="nombreApellido"></h1>
-                  <h3>Desarrollador</h3>
-              </div>
-          </div>
-      </header>
+        <section class="cuerpo" >
+            <article class="row align-items-center">
+                <div class="col-md-4 col-12 text-md-end text-center">
+                    <img class="imagenPerfil" id="imagenPerfil" alt="Imagen de Perfil">
+                </div>
+                <div class="col-md-8 text-center contenedor-texto">
+                    <h1 class="display-1">Hi! I'm <span id="nombreApellido" class="nombreApellido"></span></h1>
+                    <h2 class="display-4">FrontEnd Developer</h2>
+                </div>
+            </article>
+
+            <article class="row" id="sobremi">
+                <div>
+                    <h2 class="titulos text-center py-0">Sobre mí</h2>
+                    <div class="borde"></div>
+                </div>
+                <p class="px-5 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis libero a tellus elementum, et euismod nibh porta. Pellentesque id nisl 
+                    quam. Etiam ac accumsan tellus. Sed dui nisl, vehicula varius lectus a, mattis dignissim lacus. Praesent nibh purus, tincidunt non felis eget, 
+                    dictum dignissim mi. Maecenas at euismod nisi. Ut ut elit leo. Integer vitae ultrices diam. Vivamus efficitur lacus dui, at imperdiet eros 
+                    egestas nec.
+        
+                    Etiam suscipit efficitur lorem sed bibendum. Aenean tempor sapien sit amet mattis tincidunt. Suspendisse vel semper erat, sit amet 
+                    vulputate nisl. Curabitur a nunc eu urna vulputate tristique. Aliquam sit amet facilisis erat.
+                </p>
+            </article>
+
+            <article class="row" id="formacion">
+                <div>
+                    <h2 class="titulos text-center py-0">Formación Academica</h2>
+                    <div class="borde"></div>
+                </div>
+                <div class="row justify-content-center py-3">
+                    <div class="tarjeta col-4 mx-3 hvr-push hvr-border-fade">
+                        <img src="images/EEA-icon.png" class="img-tarjeta" alt="EEA Nº1 (Escudo)">
+                        <div class="cuerpo-tarjeta">
+                            <h3>Nivel secundario</h3>
+                            <p><small class="muted">2006 - 2008</small></p>
+                            <h4>EEA Nº1</h4>
+                        </div>
+                    </div>
+                    <div class="tarjeta col-4 mx-3 hvr-push hvr-border-fade">
+                        <img src="images/UTN_logo.jpeg" class="img-tarjeta" alt="UTN (Escudo)">
+                        <div class="cuerpo-tarjeta">
+                            <h3>Ingeniería en Sistemas</h3>
+                            <p><small class="muted">2009 – 2015</small></p>
+                            <h4>UTN</h4>
+                        </div>
+                    </div>
+                    <div class="tarjeta col-4 mx-3 hvr-push hvr-border-fade">
+                        <img src="images/UTN_logo.jpeg" class="img-tarjeta" alt="UTN (Escudo)">
+                        <div class="cuerpo-tarjeta">
+                            <h3>Analista Programador</h3>
+                            <p><small class="muted">2006 - 2008</small></p>
+                            <h4>UTN</h4>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="row" id="idiomas">
+                <div>
+                    <h2 class="titulos text-center py-0">Idiomas</h2>
+                    <div class="borde"></div>
+                </div>
+        
+                <div class="idiomas contenido px-5 py-3">
+                    <h4>Inglés</h4>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 90%">90%</div>
+                    </div>
+                    <h4>Francés</h4>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 40%">40%</div>
+                    </div>
+                    <h4>Alemán</h4>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 10%">10%</div>
+                    </div>
+                        <h4>Italiano</h4>
+                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar" style="width: 75%">75%</div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cuerpo" id="cursos">
+                <div>
+                    <h2 class="titulos text-center py-0">Cursos</h2>
+                    <div class="borde"></div>
+                </div>
+        
+                <div class="row px-5 py-3">
+                    <div class= "col-md-12">
+                        <div class="lista">
+                            <div class="lista-linea">
+                                <div class="lista-item">
+                                    <div class="lista-item-punto"></div>
+                                    <div class="lista-item-contenido">
+                                        <div class="lista-item-fecha">2011</div>
+                                        <h3 class="lista-item-titulo">Armado y Reparación de PC, 40 horas</h3>
+                                    </div>
+                                </div>
+                                <div class="lista-item">
+                                    <div class="lista-item-punto"></div>
+                                    <div class="lista-item-contenido">
+                                        <div class="lista-item-fecha">2021</div>
+                                        <h3 class="lista-item-titulo">Python, 40 horas</h3>
+                                    </div>
+                                </div>
+                                <div class="lista-item">
+                                    <div class="lista-item-punto"></div>
+                                    <div class="lista-item-contenido">
+                                        <div class="lista-item-fecha">2022</div>
+                                        <h3 class="lista-item-titulo">iOS y Swift 5, 60 horas</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <h2 class="px-4 py-3">Contacto</h2>
+            <div class="row px-5 datos-contacto">
+                <div class="contacto-titulo"><h3>Datos de contacto</h3></div>
+                <address class="col-md-10">
+                    <ul class="list-unstyled  align-self-end">
+                        <li>
+                            <i class="fa-solid fa-mobile"></i>
+                            <span id="celular"></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span id="telefono"></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-inbox"></i>
+                            <span id="mail"></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-house"></i>
+                            <span id="direccion"></span>
+                        </li>
+                    </ul>
+                </address>
+                <div class="col-md-2 align-self-end redes">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank"><span class="fa-brands fa-facebook fa-xl"></span></a></li>
+                        <li class="list-inline-item"><a href="https://linkedin.com/" target="_blank"><span class="fa-brands fa-linkedin fa-xl"></span></a></li>
+                        <li class="list-inline-item"><a href="https://www.gihub.com/" target="_blank"><span class="fa-brands fa-github fa-xl"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
   
-    
-      <section>
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item" > <a class="nav-link" href="#home">Inicio</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#sobremi">Sobre mí</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="#experiencia">Experiencia</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#formacion">Formación</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#idiomas">Idiomas</a></li>
-                <li class="nav-item"> <a class="nav-link" href="#cursos">Cursos</a></li>
-    <!--            <li class="nav-item"> <a class="nav-link" href="#">Portfolio</a></li> -->
-                <li class="nav-item"> <a class="nav-link" href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-      </section>
+            
+    </div>
 
-      <section class="secciones" id="sobremi">
-          <h2>Sobre mí</h2>
-          <p  class="contenido">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis libero a tellus elementum, et euismod nibh porta. Pellentesque id nisl 
-            quam. Etiam ac accumsan tellus. Sed dui nisl, vehicula varius lectus a, mattis dignissim lacus. Praesent nibh purus, tincidunt non felis eget, 
-            dictum dignissim mi. Maecenas at euismod nisi. Ut ut elit leo. Integer vitae ultrices diam. Vivamus efficitur lacus dui, at imperdiet eros 
-            egestas nec.
 
-            Etiam suscipit efficitur lorem sed bibendum. Aenean tempor sapien sit amet mattis tincidunt. Suspendisse vel semper erat, sit amet 
-            vulputate nisl. Curabitur a nunc eu urna vulputate tristique. Aliquam sit amet facilisis erat.
-          </p>
-      </section>
 
-      <section class="secciones" id="experiencia">
-          <h2>Experiencia</h2>
 
-          <div class="container-fluid lineadeltiempo contenido">
-              <div id="exp1" class="row lineadeltiempo-item">
-                <div class="col-1 lineadeltiempo-item-botton">
-                  <span id="exp1-boton" data-bs-target="#exp1-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-botton-icono fa-solid fa-chevron-down fa-xl collapsed" aria-expanded="false">
-                    <i></i>
-                  </span>
-                </div>
-                <div class="col lineadeltiempo-item-contenido">
-                  <h3 id="exp1-titulo" data-bs-target="#exp1-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-titulo collapsed" aria-expanded="false">Reparación de PC</h3>
-                  <div id="exp1-collapse" class="collapse" aria-expanded="true">
-                    <p><small class="muted">2006 - 2008</small></p>
-                    <h4>MANTENIMIENTO/REPARACION DE PC</h4>
-                    <p>Armado y reparación de PC en ambientes hogareños. Instalación,
-                      configuración, mantenimiento de hardware y software. Instalación
-                      de impresoras, scanners.</p>
-                  </div>
-                </div>
-              </div>
-              <div id="exp2" class="row lineadeltiempo-item">
-                <div class="col-1 lineadeltiempo-item-botton">
-                  <span id="exp2-boton" data-bs-target="#exp2-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-botton-icono fa-solid fa-chevron-down fa-xl collapsed" aria-expanded="false">
-                    <i></i>
-                  </span>
-                </div>
-                <div class="col lineadeltiempo-item-contenido">
-                  <h3 id="exp2-titulo" data-bs-target="#exp2-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-titulo collapsed" aria-expanded="false">Desarrollador Freelance</h3>
-                  <div id="exp2-collapse" class="collapse" aria-expanded="true">
-                    <p><small class="muted">2006 - 2008</small></p>
-                    <h4>DESARROLLO DE APLICACIONES</h4>
-                    <p>Desarrollo de aplicaciones moviles en lenguaje Swift.</p>
-                  </div>
-                </div>
-              </div>
-          </div>
-      </section>
 
-      <section class="secciones" id="formacion">
-          <h2>Formación Academica</h2>
 
-          <div class="container-fluid lineadeltiempo contenido">
-            <div id="form1" class="row lineadeltiempo-item">
-              <div class="col-1 lineadeltiempo-item-botton">
-                <span id="form1-boton" data-bs-target="#form1-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-botton-icono fa-solid fa-chevron-down fa-xl collapsed" aria-expanded="false">
-                  <i></i>
-                </span>
-              </div>
-              <div class="col lineadeltiempo-item-contenido">
-                <h3 id="form1-titulo" data-bs-target="#form1-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-titulo collapsed" aria-expanded="false">Nivel secundario</h3>
-                <div id="form1-collapse" class="collapse" aria-expanded="true">
-                  <p><small class="muted">2006 - 2008</small></p>
-                  <h4>ESCUELA DE EDUCACION AGROPECUARIA Nº1,</h4>
-                </div>
-              </div>
-            </div>
-            <div id="form2" class="row lineadeltiempo-item">
-              <div class="col-1 lineadeltiempo-item-botton">
-                <span id="form2-boton" data-bs-target="#form2-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-botton-icono fa-solid fa-chevron-down fa-xl collapsed" aria-expanded="false">
-                  <i></i>
-                </span>
-              </div>
-              <div class="col lineadeltiempo-item-contenido">
-                <h3 id="form2-titulo" data-bs-target="#form2-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-titulo collapsed" aria-expanded="false">Ingeniería en Sistemas de la Información</h3>
-                <div id="form2-collapse" class="collapse" aria-expanded="true">
-                  <p><small class="muted">2009 – 2015</small></p>
-                  <h4>UTN</h4>
-                </div>
-              </div>
-            </div>
-            <div id="form3" class="row lineadeltiempo-item">
-              <div class="col-1 lineadeltiempo-item-botton">
-                <span id="form3-boton" data-bs-target="#form3-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-botton-icono fa-solid fa-chevron-down fa-xl collapsed" aria-expanded="false">
-                  <i></i>
-                </span>
-              </div>
-              <div class="col lineadeltiempo-item-contenido">
-                <h3 id="form3-titulo" data-bs-target="#form3-collapse" data-bs-toggle="collapse" class="lineadeltiempo-item-titulo collapsed" aria-expanded="false">Analista Programador Universitario</h3>
-                <div id="form3-collapse" class="collapse" aria-expanded="true">
-                  <p><small class="muted">2018 - actualidad</small></p>
-                  <h4>UTN</h4>
-                </div>
-              </div>
-            </div>
-        </div>
-      </section>
-
-      <section class="secciones" id="idiomas">
-          <h2>Idiomas</h2>
-
-          <div class="idiomas contenido">
-              <h4>Inglés</h4>
-              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 90%">90%</div>
-              </div>
-              <h4>Francés</h4>
-              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 40%">40%</div>
-              </div>
-              <h4>Alemán</h4>
-              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 10%">10%</div>
-              </div>
-              <h4>Italiano</h4>
-              <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar" style="width: 75%">75%</div>
-              </div>
-          </div>
-      </section>
-
-      <section class="secciones" id="cursos">
-          <h2>Cursos</h2>
-
-          <div class="row contenido">
-              <div class= "col-md-12">
-                  <div class="lista">
-                      <div class="lista-linea">
-                          <div class="lista-item">
-                              <div class="lista-item-punto"></div>
-                              <div class="lista-item-contenido">
-                                  <div class="lista-item-fecha">2011</div>
-                                  <h3 class="lista-item-titulo">Armado y Reparación de PC, 40 horas</h3>
-                              </div>
-                          </div>
-                          <div class="lista-item">
-                              <div class="lista-item-punto"></div>
-                              <div class="lista-item-contenido">
-                                  <div class="lista-item-fecha">2021</div>
-                                  <h3 class="lista-item-titulo">Python, 40 horas</h3>
-                              </div>
-                          </div>
-                          <div class="lista-item">
-                              <div class="lista-item-punto"></div>
-                              <div class="lista-item-contenido">
-                                  <div class="lista-item-fecha">2022</div>
-                                  <h3 class="lista-item-titulo">iOS y Swift 5, 60 horas</h3>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <section class="secciones" id="contacto">
-          <h2>Contacto</h2>
-          <div class="datos-contacto contenido">
-              <div class="contacto-titulo"><h3>Datos de contacto</h3></div>
-              <address>
-                  <ul class="list-unstyled">
-                      <li>
-                        <i class="fa-solid fa-mobile"></i>
-                        <span id="celular"></span>
-                      </li>
-                      <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <span id="telefono"></span>
-                      </li>
-                      <li>
-                        <i class="fa-solid fa-inbox"></i>
-                        <span id="mail"></span>
-                      </li>
-                      <li>
-                        <i class="fa-solid fa-house"></i>
-                        <span id="direccion"></span>
-                      </li>
-                  </ul>
-              </address>
-              <div class="redes">
-                  <ul class="list-inline">
-                      <li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank"><span class="fa-brands fa-facebook fa-xl"></span></a></li>
-                      <li class="list-inline-item"><a href="https://linkedin.com/" target="_blank"><span class="fa-brands fa-linkedin fa-xl"></span></a></li>
-                      <li class="list-inline-item"><a href="https://www.gihub.com/" target="_blank"><span class="fa-brands fa-github fa-xl"></span></a></li>
-                  </ul>
-              </div>
-          </div>
-      </section>
-
-      <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>

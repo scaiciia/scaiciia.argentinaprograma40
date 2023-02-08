@@ -96,6 +96,7 @@
 body {
     font-family: 'Unbounded', cursive;
     background-color: var(--color-4);
+    max-width: max-content;
 }
 
 header {
@@ -229,4 +230,8 @@ footer {
 
 .fa-brands {
     color: var(--color-4);
+}
+
+.offcanvas {
+    --bs-offcanvas-width: 280px !important;
 }
